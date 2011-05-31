@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="IP" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="users" elementType="Argument">
+            <stringProp name="Argument.name">users</stringProp>
+            <stringProp name="Argument.value">50</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="rampUp" elementType="Argument">
+            <stringProp name="Argument.name">rampUp</stringProp>
+            <stringProp name="Argument.value">20</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="socketTimeout" elementType="Argument">
+            <stringProp name="Argument.name">socketTimeout</stringProp>
+            <stringProp name="Argument.value">200000</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="responseTimeout" elementType="Argument">
+            <stringProp name="Argument.name">responseTimeout</stringProp>
+            <stringProp name="Argument.value">240000</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="baseURL" elementType="Argument">
+            <stringProp name="Argument.name">baseURL</stringProp>
+            <stringProp name="Argument.value">http://sa8463:3141</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="user" elementType="Argument">
+            <stringProp name="Argument.name">user</stringProp>
+            <stringProp name="Argument.value">adm</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="domain" elementType="Argument">
+            <stringProp name="Argument.name">domain</stringProp>
+            <stringProp name="Argument.value">atchild</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="server" elementType="Argument">
+            <stringProp name="Argument.name">server</stringProp>
+            <stringProp name="Argument.value">sa8463</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurl1" elementType="Argument">
+            <stringProp name="Argument.name">siteurl1</stringProp>
+            <stringProp name="Argument.value">http://atsp2010</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_1" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_1</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite0/</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_2" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_2</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_3" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_3</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite2</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_4" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_4</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite3</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_5" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_5</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite4</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_6" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_6</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_7" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_7</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite6</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_8" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_8</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite7</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_9" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_9</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite8</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_10" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_10</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite9</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_11" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_11</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite10</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_12" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_12</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite11</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_13" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_13</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite12</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_14" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_14</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite13</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_15" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_15</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite14</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_16" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_16</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite15</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_17" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_17</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite16</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_18" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_18</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite17</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_19" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_19</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite18</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="siteurlnum_20" elementType="Argument">
+            <stringProp name="Argument.name">siteurlnum_20</stringProp>
+            <stringProp name="Argument.value">http://atperf/sites/toplevelsite19</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="state_busy_1" elementType="Argument">
+            <stringProp name="Argument.name">state_busy_1</stringProp>
+            <stringProp name="Argument.value">true</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="curr_actual_on_1" elementType="Argument">
+            <stringProp name="Argument.name">curr_actual_on_1</stringProp>
+            <stringProp name="Argument.value">0</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">true</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group 1" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">10</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${users}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${rampUp}</stringProp>
+        <longProp name="ThreadGroup.start_time">1302713373000</longProp>
+        <longProp name="ThreadGroup.end_time">1302713373000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </LoopController>
+        <hashTree>
+          <HTTPSampler2 guiclass="HttpTestSampleGui2" testclass="HTTPSampler2" testname="Loading" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="url" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${siteurlnum_1}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">url</stringProp>
+                </elementProp>
+                <elementProp name="loading" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">True</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">loading</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${server}</stringProp>
+            <stringProp name="HTTPSampler.port">3141</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout">${socketTimeout}</stringProp>
+            <stringProp name="HTTPSampler.response_timeout">${socketTimeout}</stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/reports/site/permissions</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">true</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSampler2>
+          <hashTree>
+            <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+              <collectionProp name="AuthManager.auth_list">
+                <elementProp name="" elementType="Authorization">
+                  <stringProp name="Authorization.url">${baseURL}</stringProp>
+                  <stringProp name="Authorization.username">${user}</stringProp>
+                  <stringProp name="Authorization.password">`1qwerty</stringProp>
+                  <stringProp name="Authorization.domain">${domain}</stringProp>
+                  <stringProp name="Authorization.realm"></stringProp>
+                </elementProp>
+              </collectionProp>
+            </AuthManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSampler2 guiclass="HttpTestSampleGui2" testclass="HTTPSampler2" testname="Cache" enabled="false">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="url" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${siteurlnum_1}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">url</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${server}</stringProp>
+            <stringProp name="HTTPSampler.port">3141</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout">${socketTimeout}</stringProp>
+            <stringProp name="HTTPSampler.response_timeout">${socketTimeout}</stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/reports/site/permissions</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">true</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSampler2>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get actual_on" enabled="false">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">curr_actual_on_1</stringProp>
+              <stringProp name="RegexExtractor.regex">actual_on=(.+?)&apos; ;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">123</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="false">
+              <collectionProp name="AuthManager.auth_list">
+                <elementProp name="" elementType="Authorization">
+                  <stringProp name="Authorization.url">${baseURL}</stringProp>
+                  <stringProp name="Authorization.username">${user}</stringProp>
+                  <stringProp name="Authorization.password">`1qwerty</stringProp>
+                  <stringProp name="Authorization.domain">${domain}</stringProp>
+                  <stringProp name="Authorization.realm"></stringProp>
+                </elementProp>
+              </collectionProp>
+            </AuthManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSampler2 guiclass="HttpTestSampleGui2" testclass="HTTPSampler2" testname="Cache" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="url" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${siteurlnum_1}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">url</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${server}</stringProp>
+            <stringProp name="HTTPSampler.port">3141</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout">${socketTimeout}</stringProp>
+            <stringProp name="HTTPSampler.response_timeout">${socketTimeout}</stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/site_permission_report</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">true</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSampler2>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get actual_on" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">curr_actual_on_1</stringProp>
+              <stringProp name="RegexExtractor.regex">actual_on=(.+?)&apos; ;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">123</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+              <collectionProp name="AuthManager.auth_list">
+                <elementProp name="" elementType="Authorization">
+                  <stringProp name="Authorization.url">${baseURL}</stringProp>
+                  <stringProp name="Authorization.username">${user}</stringProp>
+                  <stringProp name="Authorization.password">`1qwerty</stringProp>
+                  <stringProp name="Authorization.domain">${domain}</stringProp>
+                  <stringProp name="Authorization.realm"></stringProp>
+                </elementProp>
+              </collectionProp>
+            </AuthManager>
+            <hashTree/>
+          </hashTree>
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
+          <ConfigTestElement guiclass="SimpleConfigGui" testclass="ConfigTestElement" testname="busy = true" enabled="false">
+            <stringProp name="${state_ready_1}">true</stringProp>
+            <stringProp name="${state_busy_1}">true</stringProp>
+          </ConfigTestElement>
+          <hashTree/>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Prod" enabled="true">
+            <boolProp name="TransactionController.parent">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSampler2 guiclass="HttpTestSampleGui2" testclass="HTTPSampler2" testname="Site Perm State" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="url" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${siteurlnum_1}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">url</stringProp>
+                  </elementProp>
+                  <elementProp name="with_subsites" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">true</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">with_subsites</stringProp>
+                  </elementProp>
+                  <elementProp name="actual_on" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${curr_actual_on_1}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">actual_on</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${server}</stringProp>
+              <stringProp name="HTTPSampler.port">3141</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout">${socketTimeout}</stringProp>
+              <stringProp name="HTTPSampler.response_timeout">${socketTimeout}</stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/site_permission/state/</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.image_parser">true</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSampler2>
+            <hashTree>
+              <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="check state" enabled="true">
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="script">eval(&apos;var SearchResponse = &apos; + prev.getResponseDataAsString());
+vars.put(&quot;state_busy_1&quot;, SearchResponse.busy);</stringProp>
+                <stringProp name="scriptLanguage">javascript</stringProp>
+              </BSFPostProcessor>
+              <hashTree/>
+              <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+                <collectionProp name="AuthManager.auth_list">
+                  <elementProp name="" elementType="Authorization">
+                    <stringProp name="Authorization.url">${baseURL}</stringProp>
+                    <stringProp name="Authorization.username">${user}</stringProp>
+                    <stringProp name="Authorization.password">`1qwerty</stringProp>
+                    <stringProp name="Authorization.domain">${domain}</stringProp>
+                    <stringProp name="Authorization.realm"></stringProp>
+                  </elementProp>
+                </collectionProp>
+              </AuthManager>
+              <hashTree/>
+            </hashTree>
+            <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
+              <stringProp name="WhileController.condition">${state_busy_1}</stringProp>
+            </WhileController>
+            <hashTree>
+              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                <stringProp name="ConstantTimer.delay">1000</stringProp>
+              </ConstantTimer>
+              <hashTree/>
+              <HTTPSampler2 guiclass="HttpTestSampleGui2" testclass="HTTPSampler2" testname="Site Perm State" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="url" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${siteurlnum_1}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">url</stringProp>
+                    </elementProp>
+                    <elementProp name="with_subsites" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">true</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">with_subsites</stringProp>
+                    </elementProp>
+                    <elementProp name="actual_on" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${curr_actual_on_1}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">actual_on</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${server}</stringProp>
+                <stringProp name="HTTPSampler.port">3141</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout">${socketTimeout}</stringProp>
+                <stringProp name="HTTPSampler.response_timeout">${socketTimeout}</stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/site_permission/state/</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.image_parser">true</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSampler2>
+              <hashTree>
+                <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="check state" enabled="true">
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="script">eval(&apos;var SearchResponse = &apos; + prev.getResponseDataAsString());
+vars.put(&quot;state_busy_1&quot;, SearchResponse.busy);</stringProp>
+                  <stringProp name="scriptLanguage">javascript</stringProp>
+                </BSFPostProcessor>
+                <hashTree/>
+                <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+                  <collectionProp name="AuthManager.auth_list">
+                    <elementProp name="" elementType="Authorization">
+                      <stringProp name="Authorization.url">${baseURL}</stringProp>
+                      <stringProp name="Authorization.username">${user}</stringProp>
+                      <stringProp name="Authorization.password">`1qwerty</stringProp>
+                      <stringProp name="Authorization.domain">${domain}</stringProp>
+                      <stringProp name="Authorization.realm"></stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </AuthManager>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+          <HTTPSampler2 guiclass="HttpTestSampleGui2" testclass="HTTPSampler2" testname="Cache 2" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="url" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${siteurlnum_1}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">url</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${server}</stringProp>
+            <stringProp name="HTTPSampler.port">3141</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout">${socketTimeout}</stringProp>
+            <stringProp name="HTTPSampler.response_timeout">${socketTimeout}</stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/site_permission_report</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">true</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSampler2>
+          <hashTree>
+            <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+              <collectionProp name="AuthManager.auth_list">
+                <elementProp name="" elementType="Authorization">
+                  <stringProp name="Authorization.url">${baseURL}</stringProp>
+                  <stringProp name="Authorization.username">${user}</stringProp>
+                  <stringProp name="Authorization.password">`1qwerty</stringProp>
+                  <stringProp name="Authorization.domain">${domain}</stringProp>
+                  <stringProp name="Authorization.realm"></stringProp>
+                </elementProp>
+              </collectionProp>
+            </AuthManager>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get actual_on" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">curr_actual_on_1</stringProp>
+              <stringProp name="RegexExtractor.regex">actual_on=(.+?)&apos; ;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">123</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
+          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
+            <stringProp name="DurationAssertion.duration">${responseTimeout}</stringProp>
+          </DurationAssertion>
+          <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Test Action" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration"></stringProp>
+          </TestAction>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

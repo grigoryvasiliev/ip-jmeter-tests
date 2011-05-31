@@ -3,9 +3,14 @@ from sp_objects import *
 server = 'atperf'
 webapp = 'http://atperf'
 
-for num in range( 50 ):
+for num in range( 51, 200 ):
 	sc = '/sites/toplevelsite%i' %  num 
 	add_tls_in_special_db( webapp ,'WSS_ContentDB_perftest%i' % num,server, sc)
+	
+	domain = 'atchild'	
+	login = 'ford_user%i' %  num
+	addUserInSiteCollAdmins( webapp + sc, domain, login, user_mail='', title='')
+	
 	for i in range( 20 ):	
 		path = 'sub_site_withuniqperm%i'% i 
 		add_site_in_tls( webapp + sc, path , title = 'title%i'%i, descr = 'descr', web_template = 'STS#2')	
