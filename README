@@ -3,4 +3,7 @@ Open IP.jmx
 
 Tune parameters on IP node
 
-Run :)
+IP_user_perm_200_reports_and_users_template.jmx
+
+Run 200 thread with 200 different users open user permission report for 200 different site collections.
+Users parameter contain number of threads.
